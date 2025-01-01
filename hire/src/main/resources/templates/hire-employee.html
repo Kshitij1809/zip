@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hire Employee</title>
+</head>
+<body>
+
+    
+    <form action="/employees/hire" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="joinDate">Join Date:</label>
+    <input type="date" id="joinDate" name="joinDate" required>
+
+    <label for="departmentId">Department ID:</label>
+    <input type="number" id="departmentId" name="departmentId" required>
+
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary" required>
+
+    <button type="submit">Hire Employee</button>
+</form>
+    
+</body>
+</html>

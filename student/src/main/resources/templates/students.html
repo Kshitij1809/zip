@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<table style="border: 1px solid black">
+		<thead>
+			<tr>
+				<th style="width: 100px; border: 1px solid black">Fname</th>
+				<th style="width: 100px; border: 1px solid black">Lname</th>
+				<th style="width: 100px; border: 1px solid black">Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="student:${students}" style="text-align: center">
+				<td th:text="${student.fname}" style="border: 1px solid black"></td>
+				<td th:text="${student.lname}" style="border: 1px solid black"></td>
+				<td th:text="${student.email}" style="border: 1px solid black"></td>
+			</tr>
+
+		</tbody>
+	</table>
+
+	<button type="button">
+		<a href="students/add">New Student</a>
+	</button>
+
+</body>
+</html>
